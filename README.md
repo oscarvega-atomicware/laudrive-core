@@ -17,6 +17,9 @@ Despues ejecuta:
 $ npm install
 $ sails lift
 ```
+
+Veremos que el servidor levanta en el puerto 1337 y está listo para aceptar peticiones
+
 Despues podemos proceder a levantar el proyecto de la app de Ionic.
 
 
