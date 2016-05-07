@@ -25,7 +25,10 @@ module.exports = {
 	find : function(req,res){
 
 		Route.find().then(function(data){
-			
+			data.forEach(function(route){
+				route.start.desc = CryptoService.decrypt(route.start.desc);
+				route.end.desc = CryptoService.decrypt(route.end.desc);
+			})
 			res.json(data)
 		})
 	},

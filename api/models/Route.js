@@ -8,11 +8,7 @@
 module.exports = {
 
   attributes: {
-	toJSON : function(){
-		this.start.desc = CryptoService.decrypt(route.start.desc);
-		this.end.desc = CryptoService.decrypt(route.end.desc);
-		return this;
-	}
+	
 
   },
   beforeCreate : function(route,next){
